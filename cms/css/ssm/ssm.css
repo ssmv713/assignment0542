@@ -1,0 +1,167 @@
+/* .flex-column{flex-direction: column;} */
+/* 상단메뉴 */
+body{font-family: 'Noto Sans KR', sans-serif;}
+.m-auto{margin: 0 auto;}
+
+#main{background-image: url(/cms/img/getall_img/bg.jpg); height: 110vh; 
+background-size: cover; background-position: 100% 60%;}
+#main div{text-align: right; top:20vh; right: 0; left: 0;}
+#main .one{font-family: 'Jockey One', sans-serif; font-size: 3rem;}
+#main .two{font-size: 1rem;}
+
+#LP{position: fixed; top: 70%; right:-22%;}
+#LP img{width: 22%;}
+
+a{text-decoration: none !important; }
+#banner{background: url(/cms/img/getall_img/banner_bg.jpg)}
+#applyInfo{font-size: 1.2rem;}
+/* .aos-animate:before {  width: 100%;} */
+#applyInfo strong{color: #F2CC45 !important; border: solid 2px #F2CC45;}
+#jazzbox strong{position:relative; z-index: 99;}
+#jazzbox strong::after{ 
+    content: "";
+    position: absolute;
+    width:0;
+    left: -5%;
+    top:20px;
+    height: 60%;
+    transition: 1s;
+    background-color:  #D35C5C;
+    transform: skew(-20deg); z-index: -1;
+}
+#jazzbox strong.aos-animate::after{ width: 108%;}
+
+#jazzbox{padding-top: 7.5rem;}
+#jazzbox > p {color: #fff; font-size: 1.6rem; text-align: center; line-height: 5rem;} 
+#jazzbox strong{-webkit-text-stroke: 1px #F2CC45;}
+#jazzbox .wrap{position: relative; z-index: 3; 
+          background-image: url(/cms/img/getall_img/bannerTitle.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 100%;}
+
+.blinking{
+    
+    width: 43%;
+    
+    -webkit-animation:blink 1.5s ease-in-out infinite alternate;
+    -moz-animation:blink 1.5s ease-in-out infinite alternate;
+    animation:blink 1.5s ease-in-out infinite alternate;
+    transform: translateX(6%);
+  }
+  @-webkit-keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  @-moz-keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  @keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+
+#artists .container{margin: 0 auto;}
+#artiststop{margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center;}
+#artiststop h2, #artiststop div, #artiststop p{margin-bottom: 10px;}
+#artists h2{text-align: center; font-size: 24px; border-bottom: 1px solid black; width: 100px; margin: 0 auto;}
+#artists .dropBox, #artists p, em{font-style:normal; font-size: 1.5rem;}
+#artists_top .box{border-bottom: solid 2px black;}
+.artBtns button{height: 2.6rem;}
+.artBtns button:first-child{box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);}
+.artBtns button:last-child{background-color: #222; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(255, 255, 255, 0.25);}
+.artBtns span{font-size: 1.2rem; font-weight: 500;}
+.artBtns i{font-size: 1.2rem;}
+
+#artist_box h3{font-size: 26px; font-weight: 600;}
+#artist_box div{box-sizing: border-box; border-color: #9D9D9D; border-style: solid;
+    border-radius: 0px 0px 40px 40px; border-width: 0px 1px 1px 1px;}
+#artist_box p{font-size: 1rem; word-break: keep-all;}
+#artist_box img{width: 100%; border-radius: 40px 40px 0px 0px;}    
+#artist_box i{font-size: 2rem; padding-left: 1rem;}
+
+#sns{
+    background: url(/img/sir/sns_bg.jpg);
+
+}
+#sns h2{color: transparent;  font-size: 45px; font-weight: 900; 
+    text-stroke: 2px white; -moz-text-stroke: 2px white; -webkit-text-stroke: 2px white; -o-text-stroke: 2px white;}
+#sns p{font-size: 18px; padding-top: 10px;}
+#sns .insta li{border: solid 3px white;}
+#sns .insta a{padding-top: 5px; padding-bottom: 5px;  font-size: 1.5rem;}
+#sns .insta i{padding-right: 10px; }
+
+
+/* 제이쿼리와 캐미 */
+#gnb h1 img{ height: 62px; transition: 0.5s;}
+.scroll_dw #gnb h1 img{ height: 45px;}
+
+  /* SCHEDULE 파트 */
+#schedule{background-color: #0E0E0E;}  
+#schedule h2{font-size: 1.5rem; padding-top: 5rem; color: #fff;}
+#schedule h2:after{content: ""; display: block; margin:0 auto; width: 150px; text-align: center; border-bottom: solid 1px #fff;}
+#schedule .btn-link{color: #fff !important;}
+#schedule button{text-decoration: none;}
+#schedule button:hover, #schedule button.on{color: #CACD48 !important; transform: translateY(3px); font-size: 1.5rem; border-bottom: solid 6px #CACD48; }
+
+#schedule .days{padding-top:5rem; border-bottom: solid 3px #fff;}
+
+/* #schedule .slideBox ul.swipeBox{position:relative; padding-top:4rem; width: 100%; overflow: hidden;} */
+#schedule .swipeBox > li{margin: 0 1rem; width:300px !important; height: 400px; 
+                background-color: #D9D9D9; overflow: hidden; 
+                padding: 2rem; display: flex; flex-direction: column;}
+#schedule .swipeBox > li dl{flex-grow:1;}
+#schedule ul.rect{width:280px; height: 380px; font-size: 1.2rem;}
+#schedule .swipeBox dd, #schedule .swipeBox dt{font-size: 1.2rem;}
+#schedule .swipeBox dd{border-left: 1px solid black; padding-left: 1rem;}
+
+#schedule .slideBox li:after{position:absolute;
+    width: 200px;
+    height: 0px;
+    left: 10%;
+    top: 10%;
+    
+    border: 1px solid #000000;
+    transform: rotate(90deg);}
+
+
+#schedule .slideBox{padding-bottom: 7rem;}
+
+
+/* APPLY BANNER */
+#applyBanner{background-color: #282825;}
+#applyBanner h2{font-size: 1.5rem; color: white;}
+#applyBanner p{font-size: 1.2rem; line-height: 2rem; color: white;}
+#applyBanner img{width: 90%;}
+#applyBanner .playerImg{margin: 0 auto; margin-bottom: -12.4vw; transform: translateY(-5vw);
+    text-align: center;}
+
+/* 폼태그 */
+#sectionApply{background-color: #faf7f7; padding-top: 7rem;}
+#sectionApply h3{ text-align: center; line-height: 3rem; font-size: 1.5rem; width: 200px; margin: 0 auto; border-bottom: solid 1px #222;}
+#sectionApply .comment{text-align: center; font-size: 1rem;}
+#sectionApply ul{width: 100%; border-top: solid 2px rgb(52, 51, 51); }
+#sectionApply li{line-height: 2rem; border-bottom: solid 1px #222;}
+#sectionApply span{font-size: 1rem; width: 10rem;}
+#sectionApply input, #sectionApply textarea{background-color: transparent;}
+.sort input:checked + label i:before,.sns input:checked + label i:before{color: #DE8A8A; content:"\e9c7";}
+
+/* 개인정보수집 */
+#agreeBox h4{font-size: 1.3rem;}
+#agreeBox p{font-size: 1rem;}
+#agreeBox{font-size: 1.2rem;}
+#agreeBox input:checked + label i:before{content: "\e92d"; color:#DE8A8A;}
+div.check{text-align: center;}
+#agreeBox p{height: 10vw; overflow: hidden;}
+#form textarea{resize: none;}
+.btns{font-size: 1.3rem;}
+.cancleBtn{background-color: #ccc !important; color: white; border: #ccc;
+        }
+label{margin: 0;}
+
+#form i, #form i + span, .xi-checkbox-blank{vertical-align: middle; font-size: 1.2rem;}
+
+.applyBtn{background-color: #D35C5C !important; color: white; border: #D35C5C;}
+.btns input{width: 10rem;}
